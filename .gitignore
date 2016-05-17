@@ -1,0 +1,10 @@
+﻿# .gitignore
+[Pp]lugins/
+[Pp]latforms/
+node_modules/
+.vs/
+.vscode/
+bin/
+bld/
+*.user
+*.suo

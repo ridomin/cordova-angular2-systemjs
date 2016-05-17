@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com 'unsafe-eval'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <title>CdvaNGTemp</title>
+
+    <!-- CdvaNGTemp references -->
+    <link href="css/index.css" rel="stylesheet" />
+</head>
+<body>    
+    <!-- Cordova reference, this is added to your app when it's built. -->
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+    
+    <script src="Angular/lib/es6-shim/es6-shim.min.js"></script>
+    <script src="Angular/lib/zone.js/dist/zone.js"></script>
+    <script src="Angular/lib/reflect-metadata/Reflect.js"></script>
+    <script src="Angular/lib/systemjs/dist/system.src.js"></script>
+
+    <script src="Angular/app/systemjs.config.js"></script>
+    <script>
+          System.import('app').catch(function(err){ console.error(err); });
+    </script>
+    <my-app>Loading...</my-app>
+</body>
+</html>
