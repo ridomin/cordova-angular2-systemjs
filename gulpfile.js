@@ -32,3 +32,14 @@ gulp.task("cp.ng2", function () {
         { base: "node_modules" })
         .pipe(gulp.dest(paths.webroot + "Angular/lib"))
 })
+
+gulp.task("bundle", function() {
+    var path = require("path")
+    var Builder = require("systemjs-builder")
+    var builder = new Builder('./', 'bundle.config.js' )
+    
+    builder
+      .bundle('app/**/*.js - [app/**/*]', 'www/scripts/ng2rc.js')
+      .then(function(){console.log("bundle complete")})
+      .catch(function(err){console.log(err)})
+})

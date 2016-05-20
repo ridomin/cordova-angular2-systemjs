@@ -8,8 +8,8 @@
     "noEmitOnError": true,
     "removeComments": false,
     "sourceMap": true,
-    "target": "es5",
-    "outDir": "www/Angular/app"
+    "target": "es5"
+    //"outDir": "www/Angular/app"
   },
   "exclude": [
     "node_modules",
